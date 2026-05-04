@@ -15,8 +15,8 @@ function Hajok() {
     <div className="container-fluid mt-4 px-4">
       <h2 className="mb-5 text-center display-5">Csatahajók:</h2>
       <div className="row g-4">
-        {hajok.map((hajo, index) => (
-          <div className="col-12 col-md-4 col-sm-6" key={index}>
+        {hajok.map((hajo) => (
+          <div className="col-12 col-md-4 col-sm-6" key={hajo.nev}>
             <Link to={`/hajo/${hajo.nev}`} className="text-decoration-none text-dark">
               <div className="card shadow-sm py-4 h-100 text-center rounded-3 border-light">
                 <div className="card-body">
